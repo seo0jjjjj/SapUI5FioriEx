@@ -1,0 +1,16 @@
+<mvc:View controllerName="zproge2802.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+        <Text 
+            id="test"
+            text="Hello world!"
+            textAlign="Center"
+            width="300"
+            
+        />
+    </Page>
+
+
+</mvc:View>

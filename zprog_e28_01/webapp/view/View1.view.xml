@@ -1,0 +1,42 @@
+<mvc:View
+    controllerName="btp.zproge2801.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:table="sap.ui.table"
+    xmlns:c="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <Text
+            id="text_01"
+            text="0"
+        />
+
+        <l:VerticalLayout>
+            <Button
+                text="절대 누르지마시오"
+                id="btn_01"
+                press="onClick"
+                type="Success"
+            />
+            <Label
+                text="test"
+                labelFor="idTestInput"
+            />
+            <Input
+                id="idTestInput"
+                change="onChange"
+                submit="onSubmit"
+            />
+            <Text id="t1" />
+            <Input
+                id="i1"
+                submit="onT2Submit"
+            />
+        </l:VerticalLayout>
+        <Button text="다음 페이지" press="onPressNextPage"/>
+    </Page>
+</mvc:View>

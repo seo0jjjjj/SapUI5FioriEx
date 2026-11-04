@@ -1,0 +1,112 @@
+<mvc:View
+    controllerName="exam.zexame28.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:t="sap.ui.table"
+    xmlns:c="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <HBox>
+            <Input
+                id="idInput"
+                showValueHelp="true"
+                valueHelpRequest="onValueHelpRequest"
+            />
+            <Button
+                text="검색"
+                type="Emphasized"
+                press=".onSearch"
+            />
+        </HBox>
+
+        <t:Table
+            id="idTable"
+            rows="{/Students}"
+            selectionMode="Single"
+            selectionBehavior="RowOnly"
+        >
+            <t:extension>
+                <OverflowToolbar>
+                    <Title
+                        id="title"
+                        text="학생 리스트"
+                    />
+
+                    <ToolbarSpacer />
+                    <Button
+                        text="변경"
+                        press=".onPressChange"
+                    />
+                </OverflowToolbar>
+            </t:extension>
+
+            <t:columns>
+                <t:Column>
+                    <Text text="이름" />
+                    <t:template>
+                        <Text text="{name}" />
+                    </t:template>
+                </t:Column>
+
+                <t:Column>
+                    <Text text="나이" />
+                    <t:template>
+                        <Text text="{age}" />
+                    </t:template>
+                </t:Column>
+
+                <t:Column>
+                    <Text text="성별" />
+                    <t:template>
+                        <Text text="{gender}" />
+                    </t:template>
+                </t:Column>
+
+                <t:Column>
+                    <Text text="학급" />
+                    <t:template>
+                        <Text text="{class}" />
+                    </t:template>
+                </t:Column>
+
+                <t:Column>
+                    <Text text="등급" />
+                    <t:template>
+                        <Text text="{grade_level}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="등급 상태" />
+                    <t:template>
+                        <c:Icon
+                            src="sap-icon://circle-task-2"
+                            color="{=
+                                 ${grade_level} >= 3 ? 'red' : 
+                            ( ${grade_level} >= 2 ? 'yellow' : 'green' ) 
+                            }"
+                        />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="연락처" />
+                    <t:template>
+                        <Text text="{phone_number}" />
+                    </t:template>
+                </t:Column>
+                <t:Column hAlign="Center">
+                    <Text text="상세 정보" />
+                    <t:template>
+                        <Button
+                            text="상세 정보"
+                            press="onPressDetail"
+                            visible="{= ${class} === 'CL5'}"
+                        />
+                    </t:template>
+                </t:Column>
+            </t:columns>
+        </t:Table>
+    </Page>
+</mvc:View>

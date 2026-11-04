@@ -1,0 +1,27 @@
+{
+    "Customers": [
+        { "CustomerName" : "장원영", "Age" : 24, "PhoneNumber" : "010-5421-5942", 
+        "_Bookings" : [ { "AirlineID" : "AA", "FlightDate" : "2024-02-11", "BookingNumber": "2011", "Price":1000, "Currency":"EUR", "seatsMax": 500, "seatsOcc":450 },
+                        { "AirlineID" : "AA", "FlightDate" : "2024-02-13", "BookingNumber": "2012", "Price":2000, "Currency":"EUR", "seatsMax": 500, "seatsOcc":500 },
+                        { "AirlineID" : "GL", "FlightDate" : "2024-05-11", "BookingNumber": "2190", "Price":1500, "Currency":"EUR", "seatsMax": 500, "seatsOcc":500 },
+                        { "AirlineID" : "AZ", "FlightDate" : "2024-05-11", "BookingNumber": "2191", "Price":1510, "Currency":"EUR", "seatsMax": 500, "seatsOcc":100 } ] },
+        
+                        { "CustomerName" : "장원영", "Age" : 40, "PhoneNumber" : "010-8888-8457", 
+        "_Bookings" : [ { "AirlineID" : "AA", "FlightDate" : "2024-02-11", "BookingNumber": "2011", "Price":1000, "Currency":"EUR", "seatsMax": 500, "seatsOcc":450 },
+                        { "AirlineID" : "AA", "FlightDate" : "2024-02-13", "BookingNumber": "2012", "Price":2000, "Currency":"EUR", "seatsMax": 500, "seatsOcc":500 },
+                        { "AirlineID" : "GL", "FlightDate" : "2024-05-11", "BookingNumber": "2190", "Price":1500, "Currency":"EUR", "seatsMax": 500, "seatsOcc":500 },
+                        { "AirlineID" : "AZ", "FlightDate" : "2024-05-11", "BookingNumber": "2191", "Price":1510, "Currency":"EUR", "seatsMax": 500, "seatsOcc":100 } ] },
+
+        { "CustomerName" : "김우빈", "Age" : 37, "PhoneNumber" : "010-2166-5854" ,
+        "_Bookings" : [ { "AirlineID" : "AA", "FlightDate" : "2024-02-11", "BookingNumber": "3111", "Price":3000, "Currency":"USD", "seatsMax": 500, "seatsOcc":0 },
+                        { "AirlineID" : "JL", "FlightDate" : "2024-05-13", "BookingNumber": "3222", "Price":3200, "Currency":"USD", "seatsMax": 500, "seatsOcc":100 },
+                        { "AirlineID" : "GL", "FlightDate" : "2024-07-11", "BookingNumber": "3335", "Price":2100, "Currency":"USD", "seatsMax": 500, "seatsOcc":320 } ] },
+
+        { "CustomerName" : "유재석", "Age" : 49, "PhoneNumber" : "010-1421-122",
+        "_Bookings" : [ { "AirlineID" : "JL", "FlightDate" : "2024-03-11", "BookingNumber": "4217", "Price":5000, "Currency":"USD", "seatsMax": 500, "seatsOcc":425 },
+                        { "AirlineID" : "AA", "FlightDate" : "2024-04-13", "BookingNumber": "4589", "Price":6000, "Currency":"USD", "seatsMax": 500, "seatsOcc":300 },
+                        { "AirlineID" : "GL", "FlightDate" : "2024-05-11", "BookingNumber": "5874", "Price":2500, "Currency":"USD", "seatsMax": 500, "seatsOcc":489 },
+                        { "AirlineID" : "AZ", "FlightDate" : "2024-05-11", "BookingNumber": "5875", "Price":1200, "Currency":"EUR", "seatsMax": 500, "seatsOcc":120 },
+                        { "AirlineID" : "AA", "FlightDate" : "2024-05-11", "BookingNumber": "5876", "Price":5800, "Currency":"EUR", "seatsMax": 500, "seatsOcc":50 } ] }
+    ]
+}

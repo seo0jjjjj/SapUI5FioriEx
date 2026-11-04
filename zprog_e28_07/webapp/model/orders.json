@@ -1,0 +1,359 @@
+{
+  "name" : "orders",
+  "Orders": [
+    {
+      "OrderId": "ORD001",
+      "OrderDate": "2026-10-01",
+      "Customer": "C10001",
+      "CustomerName": "삼성전자",
+      "Currency": "KRW",
+      "TotalAmount": 350000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "노트북",
+          "Quantity": 2,
+          "UnitPrice": 150000,
+          "Amount": 300000,
+          "DeliveryDate": "2026-10-10"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "마우스",
+          "Quantity": 5,
+          "UnitPrice": 10000,
+          "Amount": 50000,
+          "DeliveryDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD002",
+      "OrderDate": "2026-10-03",
+      "Customer": "C10002",
+      "CustomerName": "LG전자",
+      "Currency": "KRW",
+      "TotalAmount": 520000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "모니터",
+          "Quantity": 2,
+          "UnitPrice": 200000,
+          "Amount": 400000,
+          "DeliveryDate": "2026-10-15"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "키보드",
+          "Quantity": 3,
+          "UnitPrice": 40000,
+          "Amount": 120000,
+          "DeliveryDate": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD003",
+      "OrderDate": "2026-10-05",
+      "Customer": "C10003",
+      "CustomerName": "현대자동차",
+      "Currency": "KRW",
+      "TotalAmount": 780000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "태블릿",
+          "Quantity": 3,
+          "UnitPrice": 200000,
+          "Amount": 600000,
+          "DeliveryDate": "2026-10-18"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "충전기",
+          "Quantity": 6,
+          "UnitPrice": 30000,
+          "Amount": 180000,
+          "DeliveryDate": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD004",
+      "OrderDate": "2026-10-07",
+      "Customer": "C10004",
+      "CustomerName": "SK하이닉스",
+      "Currency": "KRW",
+      "TotalAmount": 450000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "외장하드",
+          "Quantity": 5,
+          "UnitPrice": 70000,
+          "Amount": 350000,
+          "DeliveryDate": "2026-10-19"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "USB 메모리",
+          "Quantity": 10,
+          "UnitPrice": 10000,
+          "Amount": 100000,
+          "DeliveryDate": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD005",
+      "OrderDate": "2026-10-09",
+      "Customer": "C10005",
+      "CustomerName": "네이버",
+      "Currency": "KRW",
+      "TotalAmount": 640000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "개발용 노트북",
+          "Quantity": 2,
+          "UnitPrice": 280000,
+          "Amount": 560000,
+          "DeliveryDate": "2026-10-22"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "무선 마우스",
+          "Quantity": 4,
+          "UnitPrice": 20000,
+          "Amount": 80000,
+          "DeliveryDate": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD006",
+      "OrderDate": "2026-10-11",
+      "Customer": "C10006",
+      "CustomerName": "카카오",
+      "Currency": "KRW",
+      "TotalAmount": 270000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "헤드셋",
+          "Quantity": 3,
+          "UnitPrice": 60000,
+          "Amount": 180000,
+          "DeliveryDate": "2026-10-24"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "웹캠",
+          "Quantity": 3,
+          "UnitPrice": 30000,
+          "Amount": 90000,
+          "DeliveryDate": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD007",
+      "OrderDate": "2026-10-13",
+      "Customer": "C10007",
+      "CustomerName": "쿠팡",
+      "Currency": "KRW",
+      "TotalAmount": 890000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "서버",
+          "Quantity": 1,
+          "UnitPrice": 750000,
+          "Amount": 750000,
+          "DeliveryDate": "2026-10-26"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "네트워크 허브",
+          "Quantity": 2,
+          "UnitPrice": 70000,
+          "Amount": 140000,
+          "DeliveryDate": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD008",
+      "OrderDate": "2026-10-15",
+      "Customer": "C10008",
+      "CustomerName": "롯데쇼핑",
+      "Currency": "KRW",
+      "TotalAmount": 195000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "바코드 스캐너",
+          "Quantity": 3,
+          "UnitPrice": 45000,
+          "Amount": 135000,
+          "DeliveryDate": "2026-10-28"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "라벨 프린터",
+          "Quantity": 1,
+          "UnitPrice": 60000,
+          "Amount": 60000,
+          "DeliveryDate": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD009",
+      "OrderDate": "2026-10-17",
+      "Customer": "C10009",
+      "CustomerName": "포스코",
+      "Currency": "KRW",
+      "TotalAmount": 420000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "산업용 센서",
+          "Quantity": 4,
+          "UnitPrice": 80000,
+          "Amount": 320000,
+          "DeliveryDate": "2026-10-30"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "온도계",
+          "Quantity": 5,
+          "UnitPrice": 20000,
+          "Amount": 100000,
+          "DeliveryDate": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD010",
+      "OrderDate": "2026-10-19",
+      "Customer": "C10010",
+      "CustomerName": "대한항공",
+      "Currency": "KRW",
+      "TotalAmount": 560000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "항공 정비용 공구",
+          "Quantity": 4,
+          "UnitPrice": 120000,
+          "Amount": 480000,
+          "DeliveryDate": "2026-11-02"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "보호 장갑",
+          "Quantity": 8,
+          "UnitPrice": 10000,
+          "Amount": 80000,
+          "DeliveryDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD011",
+      "OrderDate": "2026-10-21",
+      "Customer": "C10001",
+      "CustomerName": "삼성전자",
+      "Currency": "KRW",
+      "TotalAmount": 310000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "프린터",
+          "Quantity": 2,
+          "UnitPrice": 120000,
+          "Amount": 240000,
+          "DeliveryDate": "2026-11-04"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "토너",
+          "Quantity": 2,
+          "UnitPrice": 35000,
+          "Amount": 70000,
+          "DeliveryDate": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "OrderId": "ORD012",
+      "OrderDate": "2026-10-23",
+      "Customer": "C10003",
+      "CustomerName": "현대자동차",
+      "Currency": "KRW",
+      "TotalAmount": 225000,
+      "Item": [
+        {
+          "ItemNo": "10",
+          "ProductName": "안전모",
+          "Quantity": 5,
+          "UnitPrice": 25000,
+          "Amount": 125000,
+          "DeliveryDate": "2026-11-06"
+        },
+        {
+          "ItemNo": "20",
+          "ProductName": "안전화",
+          "Quantity": 2,
+          "UnitPrice": 50000,
+          "Amount": 100000,
+          "DeliveryDate": "2026-11-07"
+        }
+      ]
+    }
+  ],
+  "CustomerHelp": [
+    {
+      "Customer": "C10001",
+      "CustomerName": "삼성전자"
+    },
+    {
+      "Customer": "C10002",
+      "CustomerName": "LG전자"
+    },
+    {
+      "Customer": "C10003",
+      "CustomerName": "현대자동차"
+    },
+    {
+      "Customer": "C10004",
+      "CustomerName": "SK하이닉스"
+    },
+    {
+      "Customer": "C10005",
+      "CustomerName": "네이버"
+    },
+    {
+      "Customer": "C10006",
+      "CustomerName": "카카오"
+    },
+    {
+      "Customer": "C10007",
+      "CustomerName": "쿠팡"
+    },
+    {
+      "Customer": "C10008",
+      "CustomerName": "롯데쇼핑"
+    },
+    {
+      "Customer": "C10009",
+      "CustomerName": "포스코"
+    },
+    {
+      "Customer": "C10010",
+      "CustomerName": "대한항공"
+    }
+  ]
+}

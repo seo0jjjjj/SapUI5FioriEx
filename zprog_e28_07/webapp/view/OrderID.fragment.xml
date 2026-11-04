@@ -1,0 +1,35 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns:t="sap.ui.table"
+    xmlns="sap.m"
+>
+    <Dialog
+        id="myDialog"
+        title="Order Value Help"
+        contentWidth="100px"
+        contentHeight="400px"
+        draggable="true"
+        resizable="true"
+    >
+        <content>
+            <t:Table
+                rows="{/Orders}"
+                selectionMode="Single"
+                selectionBehavior="RowOnly"
+            >
+                <t:columns>
+                    <t:Column>
+                        <Label text="주문번호" />
+                        <t:template>
+                            <Text text="{OrderId}" />
+                        </t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+            <Button
+                text="Close"
+                press="onClose"
+            />
+        </content>
+    </Dialog>
+</core:FragmentDefinition>

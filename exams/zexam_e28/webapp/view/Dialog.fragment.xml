@@ -1,0 +1,45 @@
+<!-- 상단 input 옆 버튼을 눌렀을 때 나타나는 Dialog -->
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns:t="sap.ui.table"
+    xmlns="sap.m"
+>
+    <Dialog
+        id="myDialog"
+        title="Class ValueHelp"
+        resizable="true"
+        contentWidth="100px"
+        contentHeight="400px"
+    >
+        <content>
+            <t:Table
+                rows="{dModel>/Class}"
+                selectionMode="Single"
+                selectionBehavior="RowOnly"
+                visibleRowCount="7"
+                rowSelectionChange="onDialogRowSelected"
+            >
+                <t:columns>
+                    <t:Column>
+                        <Label text="학급" />
+                        <t:template>
+                            <Text text="{dModel>class}" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column>
+                        <Label text="학급 이름" />
+                        <t:template>
+                            <Text text="{dModel>class_name}" />
+                        </t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+        </content>
+        <endButton>
+            <Button
+                text="닫기"
+                press="onClose"
+            />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

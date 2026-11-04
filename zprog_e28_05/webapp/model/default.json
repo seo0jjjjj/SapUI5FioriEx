@@ -1,0 +1,120 @@
+{
+    "name": "홍길동",
+    "_items": [
+        {
+            "subject" : "testSujbect",
+            "score" : "no score"
+        }
+    ],
+    "datas": [
+        {
+            "name": "문선민",
+            "age": 20, 
+            "state" :"Y",
+            "_items": [
+                {
+                    "subject": "abap",
+                    "score": 80,
+                    "score2" : "60"
+                },  
+                {
+                    "subject": "fiori",
+                    "score": 90,
+                    "score2" : "60"
+                },
+                {
+                    "subject": "cds",
+                    "score": 100,
+                    "score2" : "60"
+                }
+            ]
+        },
+        {
+            "name": "김보림",
+            "age": 21,
+            "state" :"N",
+            "_items": [
+                {
+                    "subject": "abap",
+                    "score": 81,
+                    "score2" : "90"
+                },
+                {       
+                    "subject": "fiori",
+                    "score": 91,
+                    "score2" : "70"
+                },
+                {
+                    "subject": "cds",
+                    "score": 101,
+                    "score2" : "20"
+                }
+            ]
+        },
+        {
+            "name": "천승환",
+            "age": 22,
+            "state" :"Y",
+            "_items": [
+                {
+                    "subject": "abap",
+                    "score": 82,
+                    "score2" : "90"
+                },
+                {
+                    "subject": "fiori",
+                    "score": 92,
+                    "score2" : "80"
+                },
+                {
+                    "subject": "cds",
+                    "score": 102,
+                    "score2" : "70"
+                }
+            ]
+        },
+        {
+            "name": "조성훈",
+            "age": 23,
+            "state" :"N",
+            "_items": [
+                {
+                    "subject": "abap",
+                    "score": 83,
+                    "score2" : "40"
+                },
+                {
+                    "subject": "fiori",
+                    "score": 93,
+                    "score2" : "60"
+                },
+                {
+                    "subject": "cds",
+                    "score": 103,
+                    "score2" : "80"
+                }
+            ]
+        },
+        {
+            "name": "하수은",
+            "age": 24,
+            "_items": [
+                {
+                    "subject": "abap",
+                    "score": 84,
+                    "score2" : "50"
+                },
+                {
+                    "subject": "fiori",
+                    "score": 94,
+                    "score2" : "70"
+                },
+                {
+                    "subject": "cds",
+                    "score": 104,
+                    "score2" : "30"
+                }
+            ]
+        }
+    ]
+}

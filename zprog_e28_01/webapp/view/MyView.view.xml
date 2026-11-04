@@ -1,0 +1,9 @@
+<mvc:View
+    controllerName="btp.zproge2801.controller.MyView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page title="두번째화면">
+        <Text text="View2입니다." />
+    </Page>
+</mvc:View>

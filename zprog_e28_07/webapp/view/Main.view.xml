@@ -1,0 +1,138 @@
+<mvc:View
+    controllerName="github.seo0jjjjj.zproge2807.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:t="sap.ui.table"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:layout="sap.ui.layout"
+    xmlns:p="sap.m.plugins"
+    height="100%"
+>
+    <f:DynamicPage
+        id="dynamicPageId"
+        headerExpanded="{/headerExpanded}"
+        toggleHeaderOnTitleClick="{/titleClickable}"
+    >
+        <!-- DynamicPage Title -->
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <Title text="Order List" />
+                </f:heading>
+            </f:DynamicPageTitle>
+        </f:title>
+        <!-- DynamicPage Header -->
+        <f:header>
+            <f:DynamicPageHeader pinnable="true">
+                <fb:FilterBar
+                    id="filterBar"
+                    header="Search Filters"
+                    showRestoreOnFB="true"
+                    showClearOnFB="true"
+                    search="onSearch"
+                    filterContainerWidth="16rem"
+                    showClearButton="true"
+                >
+                    <fb:filterGroupItems>
+                        <fb:FilterGroupItem
+                            groupName="G1"
+                            label="Order ID"
+                            visibleInFilterBar="true"
+                            name="OrderID"
+                        >
+                            <fb:control>
+                                <Input
+                                    value=""
+                                    showValueHelp="true"
+                                    valueHelpRequest="onValueHelpRequest"
+                                />
+                            </fb:control>
+                        </fb:FilterGroupItem>
+                        <fb:FilterGroupItem
+                            groupName="G2"
+                            label="FilterGroup ID"
+                            visibleInFilterBar="true"
+                            name="FilterGroup name"
+                        >
+                            <fb:control>
+                                <Input value="" />
+                            </fb:control>
+                        </fb:FilterGroupItem>
+                    </fb:filterGroupItems>
+                </fb:FilterBar>
+            </f:DynamicPageHeader>
+        </f:header>
+        <!-- 한개의 컨트롤만 넣을 수 있음. -->
+        <f:content>
+            <t:Table
+                rows="{/Orders}"
+                rowSelectionChange="onRowSelectionChanged"
+                paste=".onPaste"
+                selectionMode="Single"
+                selectionBehavior="RowOnly"
+                ariaLabelledBy="title"
+            >
+                <t:extension>
+                    <OverflowToolbar style="Clear">
+                        <Title
+                            id="title"
+                            text="Products"
+                        />
+                        <!-- 화면 이동하기 Detail.View -->
+                        <Button
+                            text="화면 이동하기"
+                            press=".onNavDetail"
+                        />
+                    </OverflowToolbar>
+                </t:extension>
+                <t:columns>
+                    <t:Column>
+                        <Label text="주문번호" />
+                        <t:template>
+                            <Text
+                                text="{OrderId}"
+                                wrapping="false"
+                            />
+                        </t:template>
+                        <t:dependents>
+                            <p:ColumnAIAction press=".onAIActionPress" />
+                        </t:dependents>
+                    </t:Column>
+                    <t:Column>
+                        <Label text="주문 날짜" />
+                        <t:template>
+                            <Text text="{OrderDate}" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column>
+                        <Label text="고객 ID " />
+                        <t:template>
+                            <Text text="{Customer}" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column>
+                        <Label text="고객 이름" />
+                        <t:template>
+                            <Text text="{CustomerName}" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column hAlign="Center">
+                        <Label text="Currency" />
+                        <t:template>
+                            <Text text="{Currency}" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column hAlign="Center">
+                        <Label text="TotalAmount" />
+                        <t:template>
+                            <Text text="{TotalAmount}" />
+                        </t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+        </f:content>
+        <!-- DynamicPage Footer -->
+        <f:footer />
+    </f:DynamicPage>
+</mvc:View>

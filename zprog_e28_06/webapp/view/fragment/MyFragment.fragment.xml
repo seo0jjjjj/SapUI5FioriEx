@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+    xmlns = "sap.m"
+    xmlns:core = "sap.ui.core"
+
+>
+<Dialog id="idDialog">
+    <Title id="idTitle" text="이름을 입력해주세요."/>
+    <Input id="idInputName" value="{top>/value2}"/>
+    <Button text="필터적용" press=".onClose"/>
+</Dialog>
+
+
+
+</core:FragmentDefinition>

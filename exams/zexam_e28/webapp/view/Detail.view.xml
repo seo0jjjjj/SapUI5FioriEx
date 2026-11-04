@@ -1,0 +1,116 @@
+<mvc:View
+    controllerName="exam.zexame28.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:c="sap.ui.core"
+    xmlns:t="sap.ui.table"
+>
+    <Page
+        id="idPageDetail"
+        title="Detail Page"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+    >
+        <!-- 디자인 : 마진 주기 -->
+        <VBox class="sapUiSmallMargin">
+            <f:SimpleForm
+                id="idSimpleForm"
+                layout="ColumnLayout"
+                title="Person Form Title"
+                columnsXL="3"
+                columnsM="1"
+                columnsL="3"
+            >
+                <f:content>
+                    <c:Title text="Student Info" />
+                    <Label text="student_id" />
+                    <Text text="{student_id}" />
+                    <Label text="name" />
+                    <Text text="{name}" />
+                    <Label text="age" />
+                    <Text text="{age}" />
+                    <Label text="gender" />
+                    <Text text="{gender}" />
+                    <Label text="birth_date" />
+                    <Text text="{birth_date}" />
+
+                    <c:Title text="Class_Info" />
+                    <Label text="class" />
+                    <Text text="{class}" />
+                    <Label text="grade_level" />
+                    <Text text="{grade_level}" />
+
+                    <c:Title text="Connection" />
+                    <Label text="email" />
+                    <Text text="{email}" />
+                    <Label text="phone_number" />
+                    <Text text="{phone_number}" />
+                    <Label text="address" />
+                    <Text text="{address}" />
+                </f:content>
+            </f:SimpleForm>
+        </VBox>
+
+        <t:Table
+            class="sapUiSmallMargin"
+            id="idTable2"
+            rows="{Grades}"
+            selectionMode="None"
+        >
+            <t:extension>
+                <OverflowToolbar>
+                    <Title
+                        id="idToolbarTitle"
+                        text="{=${name}+ ' 학생의 학업정보'}"
+                    />
+                </OverflowToolbar>
+            </t:extension>
+
+            <t:columns>
+                <t:Column>
+                    <Text text="Year" />
+                    <t:template>
+                        <Text text="{year}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="Term" />
+                    <t:template>
+                        <Text text="{term}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="Status" />
+                    <t:template>
+                        <Text text="{status}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="ABAP" />
+                    <t:template>
+                        <Text text="{ABAP}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="FIORI" />
+                    <t:template>
+                        <Text text="{FIORI}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="CLOUD" />
+                    <t:template>
+                        <Text text="{CLOUD}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="MODULE" />
+                    <t:template>
+                        <Text text="{MODULE}" />
+                    </t:template>
+                </t:Column>
+            </t:columns>
+        </t:Table>
+    </Page>
+</mvc:View>

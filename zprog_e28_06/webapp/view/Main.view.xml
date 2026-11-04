@@ -1,0 +1,134 @@
+<mvc:View
+    controllerName="github.seo0jjjjj.zproge2806.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+            
+        title="{i18n>title}"
+    >
+        <Button
+            text="필터적용"
+            press="onPress"
+        />
+        <Button
+            text="필터적용2"
+            press="onPress2"
+        />
+        <Button
+            text="프레그먼트"
+            press="openDialog"
+        />
+        <Button
+            text="Sort"
+            press="sortPress"
+        />
+        <Table
+            items="{cModel>/Customers}"
+            id="idTable1"
+            mode="SingleSelectMaster"
+            selectionChange="onSelectionChanged"
+        >
+            <columns>
+                <Column>
+                    <Text text="이름" />
+                </Column>
+                <Column>
+                    <Text text="나이" />
+                </Column>
+                <Column>
+                    <Text text="전화번호" />
+                </Column>
+                <Column>
+                    <Text text="예약 갯수" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text
+                            text="{
+                            path : 'cModel>CustomerName',
+                            formatter : '.formatter.airlineText'
+                        }"
+                        />
+                        <Text text="{cModel>Age}" />
+                        <Text text="{cModel>PhoneNumber}" />
+                        <Text text="{= ${cModel>_Bookings}.length}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <Table
+            id="idTable2"
+            items="{cModel>_Bookings}"
+        >
+            <columns>
+                <Column hAlign="Begin">
+                    <Text text="항공사 식별 코드" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="항공편 출발 날짜" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="예약 번호" />
+                </Column>
+                <Column hAlign="End">
+                    <Text text="예약 가격" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="좌석 수" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text
+                            text="{
+                            path : 'cModel>AirlineID',
+                            formatter : '.formatter.airlineText'
+                        }"
+                        />
+
+                        <Text
+                            text="{
+                            path: 'cModel>FlightDate', 
+                            type:'sap.ui.model.type.Date', 
+                            formatOptions: {
+                                'source' :{
+                                    pattern: 'yyyy-MM-dd'
+                                    },
+                                style: 'short'
+                                }
+                            }"
+                        />
+                        <Text text="{cModel>BookingNumber}" />
+                        <ObjectNumber
+                            number="{
+                            parts : [ 
+                                        {path: 'cModel>Price'},
+                                        {path: 'cModel>Currency'}
+                                    ],
+                            type : 'sap.ui.model.type.Currency',
+                            formatOptions : {showMeasure : false}
+                        }"
+                            unit="{cModel>Currency}"
+                        />
+
+                        <Text
+                            text="{
+                                parts : [
+                                    {path : 'cModel>seatsOcc'},
+                                    {path : 'cModel>seatsMax'}
+                                ],
+                                formatter: '.formatter.calSeat'
+                            }"
+                        />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

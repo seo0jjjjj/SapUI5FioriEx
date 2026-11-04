@@ -1,0 +1,113 @@
+<mvc:View
+    controllerName="zproge2803.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:t="sap.ui.table"
+    xmlns="sap.m"
+    xmlns:c='sap.ui.core'
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <FlexBox
+            id="flexBox"
+            justifyContent="Center"
+            alignItems="Start"
+        >
+            <VBox
+                id="vBox"
+                width="500px"
+            >
+                <Button
+                    width="100%"
+                    text="잠금"
+                    id="btnSwitch"
+                    press="onToggleChange"
+                />
+                <Input
+                    id="input"
+                    width="100%"
+                    value="3"
+                />
+                <Input
+                    id="input2"
+                    width="100%"
+                    value="4"
+                />
+                <Select
+                    id="select"
+                    width="100%"
+                    items="{calc>/operators}"
+                >
+                    <c:Item
+                        key="{calc>}"
+                        text="{calc>}"
+                    />
+                </Select>
+
+                <Button
+                    width="100%"
+                    text="계산하기"
+                    id="btn_cal"
+                    press="onCal"
+                    type="Emphasized"
+                />
+                <t:Table
+                    id="idTable"
+                    rows="{
+                    path: 'history>/History',
+                    filters:[{
+                        path: 'visible',
+                        operator : 'EQ',
+                        value1 : true
+                    }]
+                    
+                    }"
+                    selectionBehavior="Row"
+                    selectionMode="Single"
+                    rowSelectionChange="onRowSelectionChanged"
+                >
+                    <t:columns>
+                        <!-- <t:Column>
+                            <Text text="id" />
+                            <t:template>
+                                <Text text="{history>id}" />
+                            </t:template>
+                        </t:Column> -->
+                        <t:Column>
+                            <Text text="값1" />
+                            <t:template>
+                                <Text text="{history>var1}" />
+                            </t:template>
+                        </t:Column>
+                        <t:Column>
+                            <Text text="연산자" />
+                            <t:template>
+                                <Text text="{history>oper}" />
+                            </t:template>
+                        </t:Column>
+                        <t:Column>
+                            <Text text="값2" />
+                            <t:template>
+                                <Text text="{history>var2}" />
+                            </t:template>
+                        </t:Column>
+                        <t:Column>
+                            <Text text="결과" />
+                            <t:template>
+                                <Text text="{history>result}" />
+                            </t:template>
+                        </t:Column>
+                    </t:columns>
+                </t:Table>
+                <Button
+                    width="100%"
+                    text="삭제하기"
+                    id="btn_remove"
+                    press="onPressDelete"
+                    type="Negative"
+                />
+            </VBox>
+        </FlexBox>
+    </Page>
+</mvc:View>

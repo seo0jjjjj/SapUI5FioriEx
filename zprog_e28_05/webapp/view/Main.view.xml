@@ -1,0 +1,109 @@
+<mvc:View
+    controllerName="zproge2805.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <VBox
+            width="20%"
+            id="idVBox"
+        >
+            <Text text="{sec>FirstName}" />
+            <Text text="{sec>LastName}" />
+            <Text text="{sec>FullName}" />
+            <Input value="{sec>CustomerName}" />
+            <Button
+                text="Button"
+                press="onClick"
+            />
+        </VBox>
+        <Table
+            items="{/datas}"
+            selectionChange="onSelectionChange"
+            mode="SingleSelectMaster"
+        >
+            <columns>
+                <Column>
+                    <Text text="name" />
+                </Column>
+                <Column>
+                    <Text text="age" />
+                </Column>
+                <Column>
+                    <Text text="수강여부" />
+                </Column>
+                <Column>
+                    <Text text="items" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{name}" />
+                        <Text text="{age}" />
+                        <core:Icon
+                            src="{= ${state} === 'Y' ? 'sap-icon://accept' : 'sap-icon://high-priority'}"
+                            color="{= ${state} === 'Y' ? 'green' : 'red'}"
+                        />
+                        <!-- <Text text="{=${_items}.length}" /> -->
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <Table
+            id="idItemTable"
+            items="{_items}"
+        >
+            <headerToolbar>
+                <OverflowToolbar>
+                    <content>
+                        <Title
+                            text="[{name}]의 성적"
+                            level="H2"
+                        />
+                        <ToolbarSpacer />
+                    </content>
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column>
+                    <Text text="과목" />
+                </Column>
+                <Column>
+                    <Text text="성적" />
+                </Column>
+                <Column>
+                    <Text text="2학기 성적" />
+                </Column>
+                <Column>
+                    <Text text="합계" />
+                </Column>
+                <Column>
+                    <Text text="등급" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem vAlign="Middle">
+                    <cells>
+                        <Text text="{subject}" />
+                        <Text text="{score}" />
+                        <Text text="{score2}" />
+                        <Text text="{=(+${score} + +${score2})}" />
+                        <Text
+                            text="{=( +${score} >= 70 &amp;&amp; +${score2} >= 70) ? 'A' :'B' }"
+                        />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+        <Button
+            press="changeBindElement"
+            text="changeBindElement"
+        />
+    </Page>
+</mvc:View>

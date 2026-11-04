@@ -1,0 +1,87 @@
+<!-- 변경 버튼을 눌렀을 때 나타나는 Dialog -->
+<c:FragmentDefinition
+    xmlns:c="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Dialog
+        id="idDialogEdit"
+        title="학생 관리"
+        resizable="true"
+        contentWidth="500px"
+        contentHeight="1000px"
+    >
+        <content>
+            <f:SimpleForm
+                id="idDialogSimpleForm"
+                layout="ColumnLayout"
+                title="Person Form Title"
+                columnsXL="3"
+                columnsM="1"
+                columnsL="3"
+            >
+                <f:content>
+                    <c:Title text="Student Info" />
+                    <Label text="이름" />
+                    <Input
+                        id="idInputName"
+                        value="{=${name}}"
+                    />
+                    <Label text="나이" />
+                    <Input
+                        id="idInputAge"
+                        value="{=${age}}"
+                    />
+                    <Label text="성별" />
+                    <Input
+                        id="idInputGender"
+                        value="{=${gender}}"
+                    />
+
+                    <c:Title text="Class_Info" />
+                    <Label text="학급" />
+                    <ComboBox
+                        id="idComboBox"
+                        showSecondaryValues="true"
+                        items="{
+                        path : '/Class',
+                        model : 'dModel'
+                        }"
+                        selectedKey="{class}"
+                    >
+                        <c:ListItem
+                            key="{dModel>class}"
+                            text="{dModel>class}"
+                            additionalText="{dModel>class_name}"
+                        />
+                    </ComboBox>
+
+                    <Label text="등급" />
+                    <Input
+                        id="idInputGradeLevel"
+                        value="{=${grade_level}}"
+                    />
+
+                    <c:Title text="Connection" />
+                    <Label text="연락처" />
+                    <Input
+                        id="idPhoneNumber"
+                        value="{=${phone_number}}"
+                    />
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <beginButton>
+            <Button
+                text="저장"
+                press="onSave"
+            />
+        </beginButton>
+        <endButton>
+            <Button
+                text="닫기"
+                press="onClose"
+            />
+        </endButton>
+    </Dialog>
+</c:FragmentDefinition>

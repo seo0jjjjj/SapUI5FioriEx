@@ -1,0 +1,366 @@
+<mvc:View
+    controllerName="github.seo0jjjjj.zproge2804.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <VBox class="sapUiSizeCozy sapUiLargeMargin">
+        <Text text="{모델이름>/name}" />
+        <Input value="{모델이름>/name}" />
+        <!-- <f:Form
+            id="FormChangeColumn_threeGroups234"
+            editable="true"
+        >
+            <f:title>
+                <core:Title text="Supplier" />
+            </f:title>
+            <f:layout>
+                <f:ColumnLayout
+                    columnsM="2"
+                    columnsL="3"
+                    columnsXL="4"
+                />
+            </f:layout>
+            <f:formContainers>
+                <f:FormContainer title="Address">
+                    <f:formElements>
+                        <f:FormElement label="Name">
+                            <f:fields>
+                                <Input
+                                    value="{SupplierName}"
+                                    id="name"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Street">
+                            <f:fields>
+                                <Input value="{Street}" />
+                                <Input value="{HouseNumber}">
+                                    <layoutData>
+                                        <f:ColumnElementData
+                                            cellsSmall="2"
+                                            cellsLarge="1"
+                                        />
+                                    </layoutData>
+                                </Input>
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="ZIP Code/City">
+                            <f:fields>
+                                <Input value="{ZIPCode}">
+                                    <layoutData>
+                                        <f:ColumnElementData
+                                            cellsSmall="3"
+                                            cellsLarge="2"
+                                        />
+                                    </layoutData>
+                                </Input>
+                                <Input value="{City}" />
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Country">
+                            <f:fields>
+                                <Select
+                                    id="country"
+                                    selectedKey="{Country}"
+                                >
+                                    <items>
+                                        <core:Item
+                                            text="England"
+                                            key="England"
+                                        />
+                                        <core:Item
+                                            text="Germany"
+                                            key="Germany"
+                                        />
+                                        <core:Item
+                                            text="USA"
+                                            key="USA"
+                                        />
+                                    </items>
+                                </Select>
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Web">
+                            <f:fields>
+                                <Input
+                                    value="{Url}"
+                                    type="Url"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                    </f:formElements>
+                </f:FormContainer>
+                <f:FormContainer title="Contact">
+                    <f:formElements>
+                        <f:FormElement label="Twitter">
+                            <f:fields>
+                                <Input value="{Twitter}" />
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Email">
+                            <f:fields>
+                                <Input
+                                    value="{Email}"
+                                    type="Email"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Tel.">
+                            <f:fields>
+                                <Input
+                                    value="{Tel}"
+                                    type="Tel"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                    </f:formElements>
+                </f:FormContainer>
+                <f:FormContainer title="Other">
+                    <f:formElements>
+                        <f:FormElement label="SMS">
+                            <f:fields>
+                                <Input
+                                    value="{Sms}"
+                                    type="Tel"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Mobile">
+                            <f:fields>
+                                <Input
+                                    value="{Mobile}"
+                                    type="Tel"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Pager">
+                            <f:fields>
+                                <Input
+                                    value="{Pager}"
+                                    type="Tel"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Fax">
+                            <f:fields>
+                                <Input
+                                    value="{Fax}"
+                                    type="Tel"
+                                />
+                            </f:fields>
+                        </f:FormElement>
+                    </f:formElements>
+                </f:FormContainer>
+            </f:formContainers>
+        </f:Form> -->
+
+        <!-- <f:SimpleForm
+            id="SimpleFormChangeColumn_threeGroups234"
+            editable="true"
+            layout="ColumnLayout"
+            title="Supplier"
+            columnsM="2"
+            columnsL="3"
+            columnsXL="4"
+        >
+            <f:toolbar>
+                <Toolbar>
+                    <content>
+                         툴바 스페이서는 중간을 차지해서 왼쪽과 오른쪽에 컨트롤을 위치시킬수있음. 
+                        <Title text="Supplier" /> 
+                        <ToolbarSpacer />
+                        <Button
+                            icon="sap-icon://create"
+                            text="Craete Customer"
+                        />
+                    </content>
+                </Toolbar>
+            </f:toolbar>
+
+            <f:content>
+                <core:Title text="Address" />
+                <Label text="Name" />
+                <Input
+                    id="name"
+                    value="{SupplierName}"
+                />
+                <Label text="Street/No." />
+                <Input value="{Street}" />
+                <Input value="{HouseNumber}">
+                    <layoutData>
+                        <f:ColumnElementData
+                            cellsSmall="2"
+                            cellsLarge="1"
+                        />
+                    </layoutData>
+                </Input>
+                <Label text="ZIP Code/City" />
+                <Input value="{ZIPCode}">
+                    <layoutData>
+                        <f:ColumnElementData
+                            cellsSmall="3"
+                            cellsLarge="2"
+                        />
+                    </layoutData>
+                </Input>
+                <Input value="{City}" />
+                <Label text="Country" />
+                <Select
+                    id="country"
+                    selectedKey="{Country}"
+                >
+                    <items>
+                        <core:Item
+                            text="England"
+                            key="England"
+                        />
+                        <core:Item
+                            text="Germany"
+                            key="Germany"
+                        />
+                        <core:Item
+                            text="USA"
+                            key="USA"
+                        />
+                    </items>
+                </Select>
+                <Label text="Web" />
+                <Input
+                    value="{Url}"
+                    type="Url"
+                />
+                <core:Title text="Contact" />
+                <Label text="Twitter" />
+                <Input value="{Twitter}" />
+                <Label text="Email" />
+                <Input
+                    value="{Email}"
+                    type="Email"
+                />
+                <Label text="Tel." />
+                <Input
+                    value="{Tel}"
+                    type="Tel"
+                />
+                <core:Title text="Other" />
+                <Label text="SMS" />
+                <Input
+                    value="{Sms}"
+                    type="Tel"
+                />
+                <Label text="Mobile" />
+                <Input
+                    value="{Mobile}"
+                    type="Tel"
+                />
+                <Label text="Pager" />
+                <Input
+                    value="{Pager}"
+                    type="Tel"
+                />
+                <Label text="Fax" />
+                <Input
+                    value="{Fax}"
+                    type="Tel"
+                />
+            </f:content>
+        </f:SimpleForm> -->
+
+        <!-- <Panel
+            expandable="true"
+            expanded="false"
+        >
+            <headerToolbar>
+                <Toolbar>
+                    <content>
+                        <Text text="Person Data" />
+                        <ToolbarSpacer />
+                        <Button
+                            icon="sap-icon://biometric-thumb"
+                            press="onPress1"
+                        />
+                        <Button
+                            icon="sap-icon://comment"
+                            press="onPress2"
+                        />
+                    </content>
+                </Toolbar>
+            </headerToolbar>
+            <f:SimpleForm
+                layout="ColumnLayout"
+                title="Person Form Title"
+                columnsXL="4"
+                columnsM="2"
+                columnsL="3"
+            >
+                <f:content>
+                    <core:Title text="core title" />
+                    <Label text="label" />
+                    <Input value="{label}" />
+                    <core:Title text="core title2" />
+                    <Label text="label" />
+                    <Input value="{label}" />
+                    <Input value="{label}" />
+                    <Input value="{label}" />
+                    <Input value="{label}" />
+                    <core:Title text="core title3" />
+                    <Label text="label" />
+                    <Input value="{label}" />
+                    <Input value="{label}" />
+                    <Input value="{label}" />
+                </f:content>
+            </f:SimpleForm>
+        </Panel> -->
+
+        <!-- sap ui layout grid  -->
+        <!-- <l:Grid>
+            <Input value="TEST1">
+                <layoutData>
+                    <l:GridData span="XL12 L2 M4 S12" />
+                </layoutData>
+            </Input>
+            <Input value="TEST2">
+                <layoutData>
+                    <l:GridData span="XL6 L2 M4 S12" />
+                </layoutData>
+            </Input>
+            <Input value="TEST3">
+                <layoutData>
+                    <l:GridData span="XL3 L2 M4 S12" />
+                </layoutData>
+            </Input>
+            <Input value="TEST4">
+                <layoutData>
+                    <l:GridData span="XL3 L2 M4 S12" />
+                </layoutData>
+            </Input>
+            <Input value="TEST5">
+                <layoutData>
+                    <l:GridData span="XL6 L2 M4 S12" />
+                </layoutData>
+            </Input>
+            <Input value="TEST6">
+                <layoutData>
+                    <l:GridData span="XL6 L2 M4 S12" />
+                </layoutData>
+            </Input>
+        </l:Grid> -->
+
+        <!-- <core:Fragment
+            fragmentName="github.seo0jjjjj.zproge2804.view.fragment.MyFragment"
+        /> -->
+        <!-- 컨트롤에서 프래그먼트 호출 -->
+        <Button
+            press=".openDialogUI"
+            icon="sap-icon://warning"
+        />
+
+        <Button
+            text="loadMyFragment"
+            press=".loadMyFragment"
+        />
+    </VBox>
+</mvc:View>

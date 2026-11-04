@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog id="idDialogUI">
+        <form:SimpleForm>
+            <form:toolbar>
+                <Toolbar>
+                    <Title text="회원 정보" />
+                </Toolbar>
+            </form:toolbar>
+            <core:Title text="이름과 취미를 입력해주세요." />
+            <Label text="이름" />
+            <Input id="idInputName" />
+            <Label text="취미" />
+            <Input id="idInputHobby" />
+        </form:SimpleForm>
+        <VBox
+            width="95%"
+            alignItems="End"
+        >
+            <Button
+                press=".onCloseUI"
+                text="닫기"
+                icon="sap-icon://paper-plane"
+            />
+        </VBox>
+        <Text/>
+    </Dialog>
+</core:FragmentDefinition>

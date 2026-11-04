@@ -1,0 +1,19 @@
+{
+    "Customers":[
+        {
+            "CustomerName" : "SAP SE",
+            "Street" : "Dietmar-Hopp-Allee 16",
+            "City" : "Walldorf"
+        },
+        {
+            "CustomerName" : "Hans Bullinger",
+            "Street" : "VeilchenstraBe 12",
+            "City" : "Heidelberg"
+        },
+        {
+            "CustomerName" : "Staerck",
+            "Street" : "Kaiserstr. 55",
+            "City" : "Heidelberg"
+        }
+    ]
+}

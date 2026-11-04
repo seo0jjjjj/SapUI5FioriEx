@@ -1,0 +1,57 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:t="sap.ui.table"
+    controllerName="github.seo0jjjjj.zproge2807.controller.Detail"
+>
+    <Page
+        id="detail"
+        title="DetailTitle"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+    >
+        <t:Table id="idTable"
+        selectionMode="Single"
+        selectionBehavior="RowSelector"
+        >
+            <t:columns>
+                <t:Column>
+                    <Text text="ItemNo" />
+                    <t:template>
+                        <Text text="{ItemNo}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="ProductName" />
+                    <t:template>
+                        <Text text="{ProductName}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="Quantity" />
+                    <t:template>
+                        <Text text="{Quantity}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="UnitPrice" />
+                    <t:template>
+                        <Text text="{UnitPrice}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="Amount" />
+                    <t:template>
+                        <Text text="{Amount}" />
+                    </t:template>
+                </t:Column>
+                <t:Column>
+                    <Text text="DeliveryDate" />
+                    <t:template>
+                        <Text text="{DeliveryDate}" />
+                    </t:template>
+                </t:Column>
+            </t:columns>
+        </t:Table>
+    </Page>
+</mvc:View>

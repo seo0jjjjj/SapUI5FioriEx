@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Text text="hello fragment" />
+    <Button
+        text="OKOK"
+        press=".onFragmentButton"
+    />
+    <Button
+        text="close"
+        press=".onClose"
+    />
+</core:FragmentDefinition>
