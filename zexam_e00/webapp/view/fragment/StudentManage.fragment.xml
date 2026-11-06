@@ -1,0 +1,53 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+        xmlns="sap.m">
+    <Dialog id="idStuDialog"
+            title="학생 관리"
+            contentWidth="25%"
+            contentHeight="70%"
+            draggable="true"
+            resizable="true">
+        <content>
+            <f:SimpleForm id="idStuForm"
+                editable="true"
+                layout="ColumnLayout"
+                columnsM="2"
+                columnsL="3"
+                columnsXL="4"
+                >
+                <f:content>
+                    <core:Title text="Student Info" />
+                    <Label text="이름" />
+                    <Input value="{dialog>/name}" />
+                    <Label text="나이" />
+                    <Input value="{dialog>/age}" />
+                    <Label text="성별" />
+                    <Input value="{dialog>/gender}" />
+
+                    <core:Title text="Class Info" />
+                    <Label text="학급" />
+                    <!-- <Input value="{dialog>/class}"/> -->
+                    <ComboBox width="100%" 
+                            selectedKey="{dialog>/class}" 
+                            items="{class>/datas}" 
+                            showSecondaryValues="true">
+				        <core:ListItem key="{class>code}" text="{class>code}" 
+                                        additionalText = "{class>text}"/>
+                    </ComboBox>
+                    <Label text="등급" />
+                    <Input value="{dialog>/grade_level}"/>
+
+                    <core:Title text="Connection" />
+                    <Label text="연락처" />
+                    <Input value="{dialog>/phone_number}"/>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <beginButton>
+            <Button text="저장" press=".onSave" />
+        </beginButton>
+        <endButton>
+            <Button text="닫기" press=".onClose" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,81 @@
+<mvc:View controllerName="zexame00.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="detail" class="sapUiContentPadding" 
+    title="Detail Page" showNavButton="true" navButtonPress="onNavPress">
+        <f:SimpleForm id="SimpleFormChangeColumn_threeGroups234"
+			editable="true"
+			layout="ColumnLayout"
+			title="{detail>/item/name} 상세 조회"
+			columnsM="2"
+			columnsL="3"
+			columnsXL="4"
+			>
+			<f:content>
+				<core:Title text="Student Info" />
+				<Label text="student_id" />
+				<Text text="{detail>/item/student_id}" />
+				<Label text="name" />
+				<Text text="{detail>/item/name}" />
+				<Label text="age" />
+				<Text text="{detail>/item/age}" />
+				<Label text="gender" />
+				<Text text="{detail>/item/gender}" />
+				<Label text="birth_date" />
+				<Text text="{detail>/item/birth_date}" />
+
+				<core:Title text="Class Info" />
+				<Label text="major" />
+				<Text text="{detail>/item/major}" />
+				<Label text="class" />
+				<Text text="{detail>/item/class}"/>
+				<Label text="grade_level" />
+				<Text text="{detail>/item/grade_level}"/>
+
+				<core:Title text="Connection" />
+				<Label text="email" />
+				<Text text="{detail>/item/email}"/>
+				<Label text="phone_number" />
+				<Text text="{detail>/item/phone_number}"/>
+				<Label text="address" />
+				<Text text="{detail>/item/address}"/>
+			</f:content>
+		</f:SimpleForm>
+
+        <Table mode="SingleSelectMaster" items="{detail>/item/Grades}">
+            <headerToolbar>
+                <OverflowToolbar>
+                    <content>
+                        <Title text="{detail>/item/name} 학생의 학업정보"/>
+                    </content>
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column hAlign="Center"><Text text="Year" /></Column>
+                <Column hAlign="Center"><Text text="Term" /></Column>
+                <Column hAlign="Center"><Text text="Status" /></Column>
+                <Column hAlign="End"><Text text="ABAP" /></Column>
+                <Column hAlign="End"><Text text="FIORI" /></Column>
+                <Column hAlign="End"><Text text="CLOUD" /></Column>
+                <Column hAlign="End"><Text text="MODULE" /></Column>
+            </columns>
+            <items>
+                <ColumnListItem vAlign="Middle">
+                    <cells>
+                        <Text text="{detail>year}" />
+                        <Text text="{detail>term}" />
+                        <Text text="{detail>status}" />
+                        <Text text="{detail>ABAP}" />
+                        <Text text="{detail>FIORI}" />
+                        <Text text="{detail>CLOUD}" />
+                        <Text text="{detail>MODULE}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+	    </Table>
+
+    </Page>
+</mvc:View>

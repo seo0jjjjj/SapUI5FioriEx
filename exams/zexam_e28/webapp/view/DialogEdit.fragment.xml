@@ -25,17 +25,17 @@
                     <Label text="이름" />
                     <Input
                         id="idInputName"
-                        value="{=${name}}"
+                        value="{name}"
                     />
                     <Label text="나이" />
                     <Input
                         id="idInputAge"
-                        value="{=${age}}"
+                        value="{age}"
                     />
                     <Label text="성별" />
                     <Input
                         id="idInputGender"
-                        value="{=${gender}}"
+                        value="{gender}"
                     />
 
                     <c:Title text="Class_Info" />
@@ -44,8 +44,8 @@
                         id="idComboBox"
                         showSecondaryValues="true"
                         items="{
-                        path : '/Class',
-                        model : 'dModel'
+                            path : '/Class',
+                            model : 'dModel'
                         }"
                         selectedKey="{class}"
                     >
@@ -55,18 +55,29 @@
                             additionalText="{dModel>class_name}"
                         />
                     </ComboBox>
+                    <!-- <Select
+                        id="idSelectClass"
+                        width="100%"
+                        items="{dModel>/Class}"
+                        change="onSelectChange"
+                    >
+                        <c:Item
+                            key="{dModel>class}"
+                            text="{dModel>className}"
+                        />
+                    </Select> -->
 
                     <Label text="등급" />
                     <Input
                         id="idInputGradeLevel"
-                        value="{=${grade_level}}"
+                        value="{grade_level}"
                     />
 
                     <c:Title text="Connection" />
                     <Label text="연락처" />
                     <Input
                         id="idPhoneNumber"
-                        value="{=${phone_number}}"
+                        value="{phone_number}"
                     />
                 </f:content>
             </f:SimpleForm>

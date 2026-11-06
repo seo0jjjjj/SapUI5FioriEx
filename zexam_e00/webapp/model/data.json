@@ -1,0 +1,400 @@
+{
+  "Students": [
+    {
+      "student_id": "STU260001",
+      "name": "김도현",
+      "age": 25,
+      "gender": "남",
+      "birth_date": "2001-03-12",
+      "major": "ERP 개발 전공",
+      "class": "CL1",
+      "grade_level": 3,
+      "email": "dohyun.kim@univ.ac.kr",
+      "phone_number": "010-4829-1923",
+      "address": "서울특별시 서초구 반포대로 23",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 92,
+          "FIORI": 88,
+          "CLOUD": 95,
+          "MODULE": 84
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 96,
+          "FIORI": 91,
+          "CLOUD": 98,
+          "MODULE": 89
+        }
+      ]
+    },
+    {
+      "student_id": "STU260002",
+      "name": "박민준",
+      "age": 24,
+      "gender": "남",
+      "birth_date": "2002-07-05",
+      "major": "ERP 개발 전공",
+      "class": "CL1",
+      "grade_level": 2,
+      "email": "minjun.park@univ.ac.kr",
+      "phone_number": "010-7392-0194",
+      "address": "경기도 성남시 분당구 불정로 6",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 85,
+          "FIORI": 90,
+          "CLOUD": 82,
+          "MODULE": 88
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 89,
+          "FIORI": 92,
+          "CLOUD": 86,
+          "MODULE": 91
+        }
+      ]
+    },
+    {
+      "student_id": "STU260003",
+      "name": "이서준",
+      "age": 26,
+      "gender": "남",
+      "birth_date": "2000-11-20",
+      "major": "ERP 개발 전공",
+      "class": "CL2",
+      "grade_level": 3,
+      "email": "seojun.lee@univ.ac.kr",
+      "phone_number": "010-5120-9483",
+      "address": "인천광역시 연수구 송도과학로 85",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 78,
+          "FIORI": 82,
+          "CLOUD": 80,
+          "MODULE": 75
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 84,
+          "FIORI": 86,
+          "CLOUD": 88,
+          "MODULE": 82
+        }
+      ]
+    },
+    {
+      "student_id": "STU260004",
+      "name": "이지은",
+      "age": 25,
+      "gender": "여",
+      "birth_date": "2001-05-16",
+      "major": "ERP 개발 전공",
+      "class": "CL2",
+      "grade_level": 2,
+      "email": "jieun.lee@univ.ac.kr",
+      "phone_number": "010-2938-4857",
+      "address": "서울특별시 마포구 양화로 160",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 95,
+          "FIORI": 98,
+          "CLOUD": 92,
+          "MODULE": 90
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 97,
+          "FIORI": 100,
+          "CLOUD": 95,
+          "MODULE": 94
+        }
+      ]
+    },
+    {
+      "student_id": "STU260005",
+      "name": "김서윤",
+      "age": 23,
+      "gender": "여",
+      "birth_date": "2003-09-01",
+      "major": "ERP 개발 전공",
+      "class": "CL3",
+      "grade_level": 1,
+      "email": "seoyun.kim@univ.ac.kr",
+      "phone_number": "010-8493-2019",
+      "address": "서울특별시 송파구 올림픽로 300",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 88,
+          "FIORI": 91,
+          "CLOUD": 90,
+          "MODULE": 85
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 91,
+          "FIORI": 93,
+          "CLOUD": 94,
+          "MODULE": 88
+        }
+      ]
+    },
+    {
+      "student_id": "STU260006",
+      "name": "김이수",
+      "age": 24,
+      "gender": "여",
+      "birth_date": "2002-08-31",
+      "major": "ERP 개발 전공",
+      "class": "CL3",
+      "grade_level": 2,
+      "email": "wonyoung.jang@univ.ac.kr",
+      "phone_number": "010-3920-5812",
+      "address": "서울특별시 용산구 이태원로 27",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 96,
+          "FIORI": 95,
+          "CLOUD": 97,
+          "MODULE": 91
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 98,
+          "FIORI": 97,
+          "CLOUD": 99,
+          "MODULE": 95
+        }
+      ]
+    },
+    {
+      "student_id": "STU260007",
+      "name": "한지호",
+      "age": 26,
+      "gender": "남",
+      "birth_date": "2000-02-14",
+      "major": "ERP 개발 전공",
+      "class": "CL5",
+      "grade_level": 3,
+      "email": "jiho.han@univ.ac.kr",
+      "phone_number": "010-6819-3940",
+      "address": "경기도 수원시 영통구 광교로 156",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 82,
+          "FIORI": 87,
+          "CLOUD": 84,
+          "MODULE": 86
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 86,
+          "FIORI": 89,
+          "CLOUD": 88,
+          "MODULE": 90
+        }
+      ]
+    },
+    {
+      "student_id": "STU260008",
+      "name": "오성민",
+      "age": 25,
+      "gender": "남",
+      "birth_date": "2001-10-25",
+      "major": "ERP 개발 전공",
+      "class": "CL5",
+      "grade_level": 2,
+      "email": "sungmin.oh@univ.ac.kr",
+      "phone_number": "010-9102-4832",
+      "address": "경기도 고양시 일산동구 중앙로 1275",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 73,
+          "FIORI": 80,
+          "CLOUD": 85,
+          "MODULE": 79
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 79,
+          "FIORI": 84,
+          "CLOUD": 87,
+          "MODULE": 83
+        }
+      ]
+    },
+    {
+      "student_id": "STU260009",
+      "name": "강우진",
+      "age": 23,
+      "gender": "남",
+      "birth_date": "2003-04-19",
+      "major": "ERP 개발 전공",
+      "class": "CL5",
+      "grade_level": 1,
+      "email": "woojin.kang@univ.ac.kr",
+      "phone_number": "010-4201-9384",
+      "address": "서울특별시 강남구 테헤란로 427",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 88,
+          "FIORI": 76,
+          "CLOUD": 90,
+          "MODULE": 82
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 90,
+          "FIORI": 81,
+          "CLOUD": 93,
+          "MODULE": 85
+        }
+      ]
+    },
+    {
+      "student_id": "STU260010",
+      "name": "유나린",
+      "age": 24,
+      "gender": "여",
+      "birth_date": "2002-12-05",
+      "major": "ERP 개발 전공",
+      "class": "CL6",
+      "grade_level": 2,
+      "email": "narin.yu@univ.ac.kr",
+      "phone_number": "010-5819-2049",
+      "address": "부산광역시 해운대구 센텀중앙로 55",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 91,
+          "FIORI": 90,
+          "CLOUD": 88,
+          "MODULE": 93
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 93,
+          "FIORI": 92,
+          "CLOUD": 91,
+          "MODULE": 96
+        }
+      ]
+    },
+    {
+      "student_id": "STU260011",
+      "name": "채수빈",
+      "age": 25,
+      "gender": "여",
+      "birth_date": "2001-07-10",
+      "major": "ERP 개발 전공",
+      "class": "CL6",
+      "grade_level": 3,
+      "email": "subin.chae@univ.ac.kr",
+      "phone_number": "010-1948-2038",
+      "address": "대구광역시 수성구 달구벌대로 2450",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 89,
+          "FIORI": 91,
+          "CLOUD": 93,
+          "MODULE": 87
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 92,
+          "FIORI": 94,
+          "CLOUD": 96,
+          "MODULE": 90
+        }
+      ]
+    },
+    {
+      "student_id": "STU260012",
+      "name": "신예은",
+      "age": 23,
+      "gender": "여",
+      "birth_date": "2003-01-18",
+      "major": "ERP 개발 전공",
+      "class": "CL7",
+      "grade_level": 1,
+      "email": "yeeun.shin@univ.ac.kr",
+      "phone_number": "010-3849-5920",
+      "address": "대전광역시 서구 둔산로 100",
+      "Grades": [
+        {
+          "year": 2025,
+          "term": "1학기",
+          "status": "수료",
+          "ABAP": 90,
+          "FIORI": 89,
+          "CLOUD": 93,
+          "MODULE": 91
+        },
+        {
+          "year": 2025,
+          "term": "2학기",
+          "status": "수료",
+          "ABAP": 93,
+          "FIORI": 92,
+          "CLOUD": 95,
+          "MODULE": 94
+        }
+      ]
+    }
+  ]
+}

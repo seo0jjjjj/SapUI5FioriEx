@@ -34,7 +34,7 @@ sap.ui.define(
       },
 
       // id를 통해 input 컨트롤의 value를 가져오는 함수
-      _getValueFromIndex(id) {
+      _getInputValue(id) {
         return this.getView().byId(id)?.getValue();
       },
 
@@ -80,17 +80,22 @@ sap.ui.define(
       },
 
       onSave(oEvent) {
-        const path = oEvent.getSource().getParent().getBindingContext()?.sPath;
+        const path = this.getView()
+          .byId("idDialogSimpleForm")
+          .getBindingContext()?.sPath;
         const prevData = this.getOwnerComponent().getModel().getProperty(path);
         const newData = {
           ...prevData,
-          name: this._getValueFromIndex("idInputName"),
-          age: this._getValueFromIndex("idInputAge"),
-          gender: this._getValueFromIndex("idInputGender"),
+          name: this._getInputValue("idInputName"),
+          age: this._getInputValue("idInputAge"),
+          gender: this._getInputValue("idInputGender"),
           class: this.byId("idComboBox").getSelectedKey(),
-          grade_level: this._getValueFromIndex("idInputGradeLevel"),
-          phone_number: this._getValueFromIndex("idPhoneNumber"),
+          grade_level: this._getInputValue("idInputGradeLevel"),
+          phone_number: this._getInputValue("idPhoneNumber"),
         };
+
+        console.log("new data", newData);
+        console.log("path", path);
 
         this.getOwnerComponent().getModel().setProperty(path, newData);
 
@@ -130,6 +135,8 @@ sap.ui.define(
 
       // 변경 버튼 누를 시,
       onPressChange(oEvent) {
+        // this.getOwnerComponent().getModel().refresh(true);
+
         // 선택된 index (선택없을 시, -1)
         const index = oEvent
           .getSource()
@@ -142,11 +149,19 @@ sap.ui.define(
           MessageToast.show("변경할 데이터를 선택해주세요.");
           return;
         }
-
         this._openDialog("DialogEdit", (dialog) => {
           this.byId("idDialogSimpleForm").bindElement(`/Students/${index}`);
-          dialog.setModel(this.dModel, "dModel");
+
+          //   dialog.setModel(this.dModel, "dModel");
+          //   this.byId("idSelectClass").bindElement({
+          //     path: "/Class",
+          //     model: "dModel",
+          //   });
         });
+      },
+
+      onSelectChange(oEvent) {
+        debugger;
       },
     });
   },

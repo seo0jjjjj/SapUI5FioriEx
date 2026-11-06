@@ -1,0 +1,51 @@
+<mvc:View controllerName="zexame00.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Input id="idInput" 
+                width="150px" 
+                showValueHelp="true" 
+                valueHelpRequest="onValueHelpRequest"
+                value="{/searchClass}"/>
+        <Button text="검색" press="onPress" type="Emphasized"/>
+        <Table id="idTable" mode="SingleSelectMaster" items="{/Students}">
+            <headerToolbar>
+                <OverflowToolbar id="idToolbar">
+                    <content>
+                        <Title text="학생 리스트"/>
+                        <ToolbarSpacer />
+                        <Button text="변경" press="onUpdatePress" />
+                    </content>
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column><Text text="이름" /></Column>
+                <Column><Text text="나이" /></Column>
+                <Column><Text text="성별" /></Column>
+                <Column><Text text="학급" /></Column>
+                <Column><Text text="등급" /></Column>
+                <Column><Text text="등급 상태" /></Column>
+                <Column><Text text="연락처" /></Column>
+                <Column><Text text="상세정보" /></Column>
+            </columns>
+            <items>
+                <ColumnListItem vAlign="Middle">
+                    <cells>
+                        <Text text="{name}" />
+                        <Text text="{age}" />
+                        <Text text="{gender}" />
+                        <Text text="{class}" />
+                        <Text text="{grade_level}" />
+                        <core:Icon src="sap-icon://circle-task-2" 
+                            color="{= ${grade_level} === 1 ? '#1DDB16' : 
+                                      ${grade_level} === 2 ? '#fbff00' : '#FF0000' }"
+                        />
+                        <Text text="{phone_number}" />
+                        <Button text="상세 정보" press="onNavDetailPress" visible="{= ${class} === 'CL5'}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+	    </Table>
+    </Page>
+</mvc:View>

@@ -1,0 +1,11 @@
+{
+    "datas" : [
+        { "code" : "CL1", "text" : "1반" },
+        { "code" : "CL2", "text" : "2반" },
+        { "code" : "CL3", "text" : "3반" },
+        { "code" : "CL4", "text" : "4반" },
+        { "code" : "CL5", "text" : "5반" },
+        { "code" : "CL6", "text" : "6반" },
+        { "code" : "CL7", "text" : "7반" }
+    ]
+}
